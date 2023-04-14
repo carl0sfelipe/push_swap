@@ -6,7 +6,6 @@ LIBFTPRINTF = printf/libftprintf.a
 LIBFT = printf/libft/libft.a
 LIBFT_PATH = printf/libft/
 
-# Source files for push_swap
 SRC = has_duplicate.c has_only_int.c is_out_of_bounds.c main.c push.c radix.c rev_rotate.c rotate.c sort.c stack.c swap.c utils.c
 OBJS = $(SRC:.c=.o)
 
@@ -17,7 +16,6 @@ $(LIBFT):
 $(LIBFTPRINTF): $(LIBFT)
 	$(MAKE) -C printf/ all
 
-# Build rules
 all: $(NAME)
 
 $(NAME): $(LIBFTPRINTF) $(OBJS)
